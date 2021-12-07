@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="napominanie.MainPage">
+
+    <StackLayout BackgroundColor="Pink">
+        <Label Text="Напоминание" TextColor="Black" FontSize="30" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="Установите дату" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+        <DatePicker x:Name="dataPic" Format="dd.MM.yyyy" HorizontalOptions="CenterAndExpand" FontSize="20"/>
+        <Label Text="Установите время" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+        <TimePicker x:Name="time" Format="HH:mm" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="Введите сообщение" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+        <Entry x:Name="ent_M"  FontSize="20"/>
+        <Button x:Name="bth_s" Text="Установить" Clicked="bth_s_Clicked" HorizontalOptions="CenterAndExpand" BackgroundColor="HotPink" />
+        <Button x:Name="bth_sp" Text="Сброс" Clicked="bth_sp_Clicked" HorizontalOptions="CenterAndExpand" BackgroundColor="HotPink" />
+        <Button x:Name="opr" Text="О программе" Clicked="opr_Clicked"  HorizontalOptions="CenterAndExpand" BackgroundColor="HotPink" />
+    </StackLayout>
+</ContentPage>
